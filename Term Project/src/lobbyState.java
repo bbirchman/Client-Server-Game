@@ -1,0 +1,1 @@
+public enum lobbyState {STARTING, RUNNING}	

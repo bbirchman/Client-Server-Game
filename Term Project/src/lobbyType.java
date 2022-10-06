@@ -1,0 +1,1 @@
+public enum lobbyType {MAIN_LOBBY, GAME_LOBBY}
