@@ -3,7 +3,7 @@ Group project poker game. My role involved network related backend server-side d
 
 # Texas Holdem Documentation
 Group: Daemon Demons
-Group Members:
+Contributors:
 - Noah Reiniger
 - Ben Birchman
 - Kiernan Connolly
@@ -112,6 +112,7 @@ Can update the values with basic getters and setters.
 ### Card.java
 Stores a card as a collection of enums. Can create a deck of cards which is a List.
 
+  
 ## Client side
 The client runs on three threads and is composed of three classes: Client.java, ClientUIThread,
 and GameComposite.
@@ -164,9 +165,7 @@ A player can exit a running game in 2 ways; first they can type “exit” and r
 lobby, and second they can brute force disconnect by closing their application. Both are handled
 by the server appropriately. Finally, a player can leave the main lobby by typing “disconnect”.
 
-
 ### Application Specific Protocol
-
 Message:(Length in New Lines)
 Type:(Message Type, i.e. Message, Gamestate, Chat, History, or Command)
 (Optional Headers):(ex: User who sent the message (Only if Message type from Server))
@@ -180,6 +179,7 @@ each player in the lobby. Chat logs are separated by lobby.
 Each time a game ends, the poker game returns the name of the winner and how many wins
 they have, and updates the global scoreboard (synchronized list).
 
+  
 ## Team Contribution
 We divided the work of the project into three parts, the Client/UI application, the Server, and the
 Game Logic. Kiernan Handled the Game Logic, Noah handled the Client, and Ben handled the
